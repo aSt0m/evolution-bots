@@ -1,7 +1,7 @@
 const ham = document.querySelector('.ham');
 const enlaces = document.querySelector('.enlaces-menu');
 const barras = document.querySelectorAll('.ham span');
-const carrousel = document.querySelector('.contenido');
+const carrousel = document.querySelector(' .img-carrousel');
 
 
 
