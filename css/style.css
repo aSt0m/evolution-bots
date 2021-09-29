@@ -37,22 +37,28 @@ h5{
 }
 
 #particles-js{   
-     height: 100vh;
+     height: 150vh;
      width: 100%;
      position: relative ;
      /* z-index: -1 ; */
      background: #fff;
     
 }
+@media (min-width: 768px){
+    #particles-js{
+        height: 100vh;
+    }
+}
 .contenido{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 80%;
-    height: 70%;
+    height: 100%;
     border: 1px solid red;
+    padding: 1rem;
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 0;
     bottom: 0;
     right: 0;
@@ -62,7 +68,8 @@ h5{
 @media (min-width: 768px){
     .contenido{
         flex-direction: row-reverse;
-        top: 30%;
+        align-items: center;
+        top: 10%;
     }
 }
 .carrousel{
@@ -76,6 +83,12 @@ h5{
     height: 40vh;
 
     border: 1px solid blue;
+}
+@media (min-width: 768px){
+    .text{
+        width: 40%;
+        display: flex;
+    }
 }
 
 
