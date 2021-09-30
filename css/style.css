@@ -186,6 +186,7 @@ transition: 0.2s  0.1s;
 @media (min-width: 768px){
     .contenido{
         flex-direction: row-reverse;
+        height: 100%;
     }
    
 }
