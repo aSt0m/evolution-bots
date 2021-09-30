@@ -21,9 +21,7 @@ html{
 img{
     max-width: 100%;
 }
-.ctr{
-    margin: 0 auto;
-}
+
 .centrado{
     width: 85%;
     margin: 0 auto;
@@ -176,14 +174,13 @@ nav{
      transform:rotate(360deg);
  }  
  
- .carrousel{
+ /* .carrousel{
     display: flex; 
     justify-content: center;
     align-content: center;
-    height: 80vh; 
-     
+   
  }
-
+ */
 
 
 
