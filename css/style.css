@@ -141,7 +141,7 @@ transition: 0.2s  0.1s;
       text-decoration:none;
       font-size: 1.8rem;
       color: var(--color-primary);
-      font-weight:600;
+      font-weight:300;
   }
   .enlaces-menu li:hover{
       background-color:rgb(2, 17, 32);
@@ -239,6 +239,10 @@ transition: 0.2s  0.1s;
     background-color: #aedee1;
     padding: 2rem;
 }
+.title-section-med{
+    color: var(--color-primary);
+    text-transform: capitalize;
+}
 @media (min-width: 768px){
     .section-med{
         display: flex;
@@ -265,10 +269,6 @@ transition: 0.2s  0.1s;
 
     }
 }
-
-    
-
-
 .section-div{
     display: flex;
     flex-direction: column-reverse;
@@ -314,8 +314,99 @@ transition: 0.2s  0.1s;
     }
 }
 
+.section-cards{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 4rem;
+}
+.section-cards-title{
+    margin: 5rem 0;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    font-weight: 300;
 
+}
+.contain-cards{
+    display: flex;
+    flex-direction: column;
 
+}
+@media (min-width: 768px){
+    .contain-cards{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+}
+.card{
+    width: 100%;
+    height: 40vh;
+    border-radius: 6px;
+    background: #f0f4f3;
+    box-shadow: 0 .5rem 1rem;
+    text-align: center;
+    margin: 3rem 0;
+}
+@media (min-width: 768px){
+    .card{
+        height: 45vh;
+        width: 15%;
+    }
+    
+}
+.card:hover{
+    background: var(--color-primary);
+    color: rgb(255, 255, 255);
+    transition: .5s;
+    
+}
+.line-top{
+    width: 50%;
+    margin-top: 4rem;
+}
+.p-card{
+    font-size: 1.2rem;
+}
+
+.section-table-contain{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.section-table__text{
+    font-size: 1.1rem;
+}
+@media (min-width: 768px){
+    .section-table-contain{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .section-table__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        width: 40%;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        
+    }
+    .section-table__table{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+    }
+    .img-section-table{
+        height: 100%;
+        padding: 3rem;
+        
+        
+    }
+}
 
 
 
