@@ -29,6 +29,9 @@ img{
 .white{
     color: #fff;
 }
+.no-margin{
+    margin: 0px;
+}
 h1,
 h2,
 h3,
@@ -173,12 +176,15 @@ transition: 0.2s  0.1s;
      transform:rotate(360deg);
  }  
  
+ .header-main{
+     background:rgb(9, 113, 218)
+
+ }
 .contenido{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 85vh;
-    background:rgb(9, 113, 218)
    
 
 }
@@ -201,40 +207,99 @@ transition: 0.2s  0.1s;
         align-items: center;
     }
 }
-
+.main-par{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
 @media (min-width: 768px){
     .main-par{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-       
         
+        flex-direction: row;
+           
     }
-    .main-par:nth-child(2){
-        flex-direction: row-reverse;
 }
 .main-img{
-    width: 50%;
+    width: 80%;
+}
+
+
+@media (min-width: 768px){
+    .main-par:nth-child(2){
+        flex-direction: row-reverse;
+    }
 }
 .main-text{
-    width: 50%;
+    width: 80%;
 }
+
+.section-med{
+    background-color: #aedee1;
+    padding: 2rem;
+}
+@media (min-width: 768px){
+    .section-med{
+        display: flex;
+    }
+    .section-med__left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-med__right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media (min-width: 768px){
+
+    .contain-section-mid{
+    display: flex;   
+
+    }
+}
+
+    
+
 
 .section-div{
-    background:#001029; 
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+    padding: 2rem;
+    background:rgb(2, 17, 32) ;
 }
+.section-div__contain{
+    display: flex;
+    justify-content: space-between;
+    height: 50vh;
+}
+@media (min-width: 768px){
+    .section-div{
 
+    }
+    .section-div__contain{
+       
+    }
+    .section-div__left{
 
-
-
-
-
-
-
-
-
-
-
+        
+    }
+    .section-div__right{
+        
+       
+    }
+    .section-div__img{
+       
+    }
+}
 
 
 
