@@ -70,6 +70,7 @@ nav{
     top: 0;
     padding-top: 25px;
     padding-bottom: 25px;
+    background:#f7f7f7;
 }
 @media (min-width: 768px){
     nav{
@@ -359,6 +360,7 @@ transition: 0.2s  0.1s;
     
 }
 .card:hover{
+    cursor: pointer;
     background: var(--color-primary);
     color: rgb(255, 255, 255);
     transition: .5s;
@@ -383,6 +385,12 @@ transition: 0.2s  0.1s;
 }
 .section-table__text{
     font-size: 1.1rem;
+    text-align: start;
+}
+
+.title-section-table{
+    font-size: 2rem;
+   
 }
 
 @media (min-width: 768px){
@@ -410,9 +418,29 @@ transition: 0.2s  0.1s;
         height: 100%;   
     }
 }
+.contain-section-map{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.title-section-map{
+    text-transform: capitalize;
+    color: #212121;
+}
+@media (min-width: 768px){
 
-
+    .title-section-map{
+        font-size: 2.5rem;
+    }   
+    .paragraph-section-map{
+            text-align: center;
+            width: 50%;
+            font-size: 2rem;
+    }
+}
 
 
 
