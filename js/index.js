@@ -11,4 +11,7 @@ ham.addEventListener('click', () => {
         child.classList.toggle('animado')});
     ham.classList.toggle('girar');
     carrousel.classList.toggle('none');
+    text.classList.toggle('none');
+    
+   
 });
