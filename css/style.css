@@ -319,7 +319,7 @@ transition: 0.2s  0.1s;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 4rem;
+    padding: 4rem; 
 }
 .section-cards-title{
     margin: 5rem 0;
@@ -349,6 +349,7 @@ transition: 0.2s  0.1s;
     box-shadow: 0 .5rem 1rem;
     text-align: center;
     margin: 3rem 0;
+   
 }
 @media (min-width: 768px){
     .card{
@@ -370,7 +371,10 @@ transition: 0.2s  0.1s;
 .p-card{
     font-size: 1.2rem;
 }
-
+.section-table{
+    margin-top: 4rem;
+    padding: 2rem;
+}
 .section-table-contain{
     height: 70vh;
     display: flex;
@@ -380,6 +384,7 @@ transition: 0.2s  0.1s;
 .section-table__text{
     font-size: 1.1rem;
 }
+
 @media (min-width: 768px){
     .section-table-contain{
         flex-direction: row;
@@ -389,7 +394,7 @@ transition: 0.2s  0.1s;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: start;
+        align-items: center;
         width: 40%;
         font-size: 1.5rem;
         line-height: 2rem;
@@ -398,13 +403,11 @@ transition: 0.2s  0.1s;
     .section-table__table{
         width: 60%;
         display: flex;
-        justify-content: center;
+        justify-content: end;
+        
     }
     .img-section-table{
-        height: 100%;
-        padding: 3rem;
-        
-        
+        height: 100%;   
     }
 }
 
