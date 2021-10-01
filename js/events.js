@@ -1,7 +1,7 @@
 const ham = document.querySelector('.ham');
 const enlaces = document.querySelector('.enlaces-menu');
 const barras = document.querySelectorAll('.ham span');
-const carrousel = document.querySelector(' .img-carrousel');
+// const carrousel = document.querySelector(' .img-carrousel');
 
 
 
@@ -10,8 +10,8 @@ ham.addEventListener('click', () => {
     barras.forEach(child => {
         child.classList.toggle('animado')});
     ham.classList.toggle('girar');
-    carrousel.classList.toggle('none');
-    text.classList.toggle('none');
+    // carrousel.classList.toggle('none');
+    // text.classList.toggle('none');
     
    
 });
