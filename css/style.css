@@ -429,7 +429,7 @@ transition: 0.2s  0.1s;
     .section-table__table{
         width: 60%;
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         
     }
     .img-section-table{
@@ -466,7 +466,7 @@ transition: 0.2s  0.1s;
 
 .section-bar{
     height: 100%;
-    background: radial-gradient(rgb(76, 214, 11) 40%,transparent 10% ,rgb(187, 28, 28) 90%), url(../img/nubes.png);
+    background: radial-gradient(rgb(63, 44, 20) 40%,transparent 10% ,rgb(187, 28, 28) 90%), url(../img/nubes.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: color-dodge;
