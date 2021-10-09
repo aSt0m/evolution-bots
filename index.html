@@ -8,6 +8,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+            <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="main.css">
@@ -37,7 +39,42 @@
             <div class="header-main">
                 <div class="contenido centrado"  >
                     <div class="carrousel text-center">
-                        <img class="img-carrousel centrado" src="img/equipos.png" alt="">
+                        <!-- <div class="container"> -->
+                            
+                             <!-- Swiper -->
+                            <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <img src="/img/03.png" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="/img/01.png" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="/img/02.png" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="/img/03.png" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="/img/01.png" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                              </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                        <!-- </div> -->
                     </div>
                     <div class="text text-center">
                         <p>Lorem, ipsum dolor.</p>
@@ -230,7 +267,11 @@
     </div>
 </footer>
 
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script src="/js/carrousell.js"></script>
 <script src="js/events.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>">
 </body>
 </html>
