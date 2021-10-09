@@ -215,11 +215,13 @@ transition: 0.2s  0.1s;
 
 
 /* carrusel */
+/*
 html,
 body {
-  /* position: relative; */
-  /* height: 100%; */
+   position: relative; 
+   height: 100%; 
 }
+*/
 
 /* body {
   background: #eee;
@@ -258,7 +260,9 @@ body {
         padding: 0;
     }
 }
-
+.swiper-wrapper{
+    width: 57%;
+}
 .swiper-slide {
     border-radius: 10px;
     background-position: center;
