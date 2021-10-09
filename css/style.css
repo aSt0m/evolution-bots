@@ -184,6 +184,12 @@ transition: 0.2s  0.1s;
      transform:rotate(360deg);
  }  
  
+ @media (min-width: 768px){
+     .header-main{
+         height: 100vh;
+      
+     }
+ }
  .header-main{
      background: #fff;
 
@@ -191,7 +197,7 @@ transition: 0.2s  0.1s;
 .contenido{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-e;
     height: 85vh;
    
 
@@ -200,30 +206,29 @@ transition: 0.2s  0.1s;
 @media (min-width: 768px){
     .contenido{
         flex-direction: row-reverse;
+        align-items: center;
         height: 100%;
     }
    
 }
-.carrousel{
-    height: 50vh;
-}
+
 
 
 /* carrusel */
 html,
 body {
-  position: relative;
-  height: 100%;
+  /* position: relative; */
+  /* height: 100%; */
 }
 
-body {
+/* body {
   background: #eee;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
   margin: 0;
   padding: 0;
-}
+} */
 
 .container{
     display: flex;
@@ -234,6 +239,7 @@ body {
     background: rgb(218, 34, 34);
    
 }
+
 .title-carrousel{
     margin: 0;
     color: #fff;
@@ -245,6 +251,12 @@ body {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+@media (min-width: 768px){
+    .swiper{
+        width: 50%;
+        padding: 0;
+    }
 }
 
 .swiper-slide {
@@ -265,17 +277,24 @@ body {
 .swiper-slide img {
     border-radius: 10px;
     display: block;
-    width: 100%;
+    width: 120%;
     height: 100%;
+
     object-fit: cover;
+}
+@media (min-width: 768px){
+    .swiper-slide img{
+        height: 100%;
+    }
 }
 .swiper-pagination-bullet{
     /* background: #fff; */
-    background: #fff;
+    background: #000;
 }
-.swiper-slide-shadow-left,
-.swiper-slide-shadow-right{
-    background-image: none
+
+.swiper-slide-shadow-right,
+.swiper-slide-shadow-left{
+background-image: none !important;
 }
 
 
@@ -284,15 +303,19 @@ body {
 
 
 .text{
-    margin-top: 6rem;
+    /* margin-top: 6rem; */
     text-align: center
 }
 @media (min-width: 768px){
     .text{
-        display: flex;
+        width: 30%;
+        /* display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: center; */
+    }
+    .carrousel{
+        width: 70%
     }
 }
 .main-par{
