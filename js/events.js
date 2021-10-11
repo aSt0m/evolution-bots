@@ -1,3 +1,4 @@
+ /**Hamburguer menu */
  const ham = document.querySelector('.ham');
  const enlaces = document.querySelector('.enlaces-menu');
  const barras = document.querySelectorAll('.ham span');
@@ -11,7 +12,7 @@
          child.classList.toggle('animado')});
      ham.classList.toggle('girar');  
  });
-
+/** carrousel */
 var swiper = new Swiper(".mySwiper", {
   effect: "coverflow",
   grabCursor: true,
@@ -23,6 +24,10 @@ var swiper = new Swiper(".mySwiper", {
     depth: 300,
     modifier: 2,
     slideShadows: false,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
  loop: true,
 });
