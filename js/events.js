@@ -23,11 +23,13 @@ var swiper = new Swiper(".mySwiper", {
     stretch: 0,
     depth: 300,
     modifier: 2,
-    slideShadows: false,
+    slideShadows: true,
   },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+  autoplay: {
+    delay: 5000,
+  },
+  mousewheel: {
+    invert: true,
   },
  loop: true,
 });

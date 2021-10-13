@@ -74,6 +74,8 @@ h5{
     width: 12rem;
     height: 2rem;
     padding-left:25px;
+    object-fit: contain;
+
 }
 
 @media (min-width: 768px){
@@ -160,11 +162,12 @@ transition: 0.2s  0.1s;
 .header-main{
     height: 100%;
     background: #fff;
+    background: url(/img/Fondo_Moleculas.jpg)
     
    }
    @media (min-width: 768px){
        .header-main{
-           height: 100vh;
+           height: 90vh;
         
        }
    } 
@@ -210,7 +213,7 @@ transition: 0.2s  0.1s;
 .contenido{
     display: flex;
     flex-direction: column;
-    justify-content: space-e;
+    justify-content: space-evenly;
     height: 85vh;
    
 
@@ -274,7 +277,7 @@ body {
     }
 }
 .swiper-wrapper{
-    width: 57%;
+    /* width: 57%; */
 }
 .swiper-slide {
     border-radius: 10px;
@@ -285,6 +288,15 @@ body {
     filter: blur(4px);
     /* background: #d1ebff; */
     background: transparent;
+}
+@media (min-width: 768px){
+    .swiper-slide{
+        height: 70vh;
+    }
+}
+.img-swiper{
+   
+    object-fit: cover;
 }
 .swiper-slide-active{
     filter: blur(0px);
@@ -330,15 +342,22 @@ background-image: none !important;
 
 }
 .title-text{
-    font-size: 1.5rem; 
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem; 
     text-align: center;
     line-height: 1.5;
-    font-weight: bold;
+    font-weight: 700;
+    font-family: 'Questrial', sans-serif;
+    font-family: 'Spartan', sans-serif;
+
 }
 .cont-text{
     text-align: center;
     line-height: 1.5;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: capitalize;
 }
 @media (min-width: 768px){
     .text{
@@ -371,8 +390,8 @@ background-image: none !important;
 }
 .img-main{
     
-    padding: 3rem;
-    object-fit: cover;
+    /* padding: 0.5rem; */
+    /* object-fit: cover; */
 }
 
 @media (min-width: 768px){
@@ -521,7 +540,7 @@ background-image: none !important;
 @media (min-width: 768px){
     .contain-cards{
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     
 }
@@ -537,7 +556,7 @@ background-image: none !important;
 }
 @media (min-width: 768px){
     .card{
-        height: 45vh;
+        height: 38.5vh;
         width: 15%;
     }
     
@@ -675,3 +694,9 @@ background-image: none !important;
     }
 }
 
+/* .swiper-button-prev,
+.swiper-button-next{
+    background: transparent;
+    color: #fff;
+    position: absolute;
+} */
