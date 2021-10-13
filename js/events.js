@@ -33,3 +33,10 @@ var swiper = new Swiper(".mySwiper", {
   },
  loop: true,
 });
+
+
+/**Close answer */
+// const minor = document.querySelector(".ion-md-remove");
+// minor.addEventListener("click" ()=>{
+
+// })
