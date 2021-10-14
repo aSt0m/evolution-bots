@@ -233,10 +233,11 @@ transition: 0.2s  0.1s;
         flex-direction: row-reverse;
         align-items: center;
         justify-content: space-between;
-        height: 100%;
+        height: 100vh;
     }
-   .swiper-slide{
-       height: auto;
+   .img-swiper{
+
+       height: 100%;
    }
 }
 
@@ -444,6 +445,7 @@ background-image: none !important;
     padding: 2rem;
 }
 .contain-section-mid{
+    text-align: center;
     display:flex;
     flex-direction: column;
 }
@@ -544,6 +546,7 @@ background-image: none !important;
 }
 
 .section-div__contain{
+    text-align: center;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -552,7 +555,7 @@ background-image: none !important;
 }
 
 .title-section-div{
-    text-align: left;
+    
     margin: 1rem 0;
     line-height: 1.2;
     font-size: 2.9rem;
@@ -718,25 +721,33 @@ background-image: none !important;
     font-size: 1.2rem;
 }
 
+/* Section => Referrals */
+
 .section-table-contain{
     height: 100%;
 
     
 }
 .section-table__text{
-    font-size: 1.1rem;
-    text-align: start;
+   
+    text-align: center;
 }
 .text-section-table{
     line-height: 1.5;
+    font-size: 1.5rem;
 
 }
 .title-section-table{
-    font-size: 2rem;
+    color: #046A79;
+    font-size: 2.4rem;
+    
+   
    
 }
 .img-section-table{
-    width: 100%;
+    object-fit: contain;
+    height: 40vh;
+    width: 50vh;
 }
 
 @media (min-width: 768px){
@@ -767,7 +778,7 @@ background-image: none !important;
     }
 }
 .section-map{
-    margin-top: 6rem;
+    margin: 6rem 0;
 }
 .contain-section-map{
     
@@ -778,10 +789,17 @@ background-image: none !important;
 }
 
 .title-section-map{
+    font-size: 2rem;
     text-transform: capitalize;
     color: #2a3995;
 }
-
+.paragraph-section-map{
+    font-size: 1.4rem;
+}
+.img-map{
+    height: 40vh;
+    object-fit: contain;
+}
 @media (min-width: 768px){
 
     .title-section-map{
