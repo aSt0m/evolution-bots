@@ -25,7 +25,7 @@
 </head>
 
 <body>
-
+    <div id="particles-js"></div>
     <header class="header">
         <nav class="nav">
             <a href="#"><img class="logo" src="img/FidelityBots_Logo.png" alt="logo"></a>
@@ -118,7 +118,7 @@
             </div>
 
     </main>
-    <section class="section-med">
+    <section class="section-med" id="offer">
         <div class="contain-section-mid centrado">
             <div class="section-med__left">
                 <div class="icon-container">
@@ -138,13 +138,13 @@
                 </div>
                 <div class="section-med__left-down">
                     <h3 class="title-paragraph">La forma más segura, en su propia cuenta.</h3>
-                    <p class="paragraph-section-med "> Con Fidelity Bots usted no cede la custodia de sus criptomonedas
+                    <p  class="paragraph-section-med "> Con Fidelity Bots usted no cede la custodia de sus criptomonedas
                         a nadie sino que las mantiene en su propia cuenta del Exchange autorizando únicamente a que las
                         órdenes de mercado se reproduzcan en su cuenta a través de alguno de nuestros bots de trading.
-                    </p>
+                    </p >
                 </div>
             </div>
-            <div class="section-med__center text-center" id="offer">
+            <div class="section-med__center text-center" >
                 <h2 class="title-section-med">qué ofrecemos</h2>
                 <img class="img-central" src="img/Bots_Laptop.png" alt="" class="section-med__img ">
             </div>
@@ -201,15 +201,15 @@
         <div class="contain-cards centrado">
             <div class="card ">
                 <img src="img/GuardBot_Box.png" alt="" class="img-card">
-                <h3 class="btn-instalar">instalar</h3>
+                <h3 class="btn1 btn-instalar">instalar</h3>
             </div>
             <div class="card">
                 <img src="img/IntrepidBot_Box.png" alt="" class="img-card">
-                <h3 class="btn-instalar">instalar</h3>
+                <h3 class="btn2 btn-instalar">instalar</h3>
             </div>
             <div class="card">
                 <img src="img/CorpBot_Box.png" alt="" class="img-card">
-                <h3 class="btn-instalar">instalar</h3>
+                <h3 class="btn3 btn-instalar">instalar</h3>
             </div>
 
 
@@ -425,15 +425,16 @@
 
 
 
-
-
-
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
+    
     <!-- Initialize Swiper -->
-    <script src="/js/carrousell.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    
+    <!-- <script src="js/carrousell.js"></script> -->
     <script src="js/events.js"></script>
+    <!-- Particle JS -->
+    <script src="js/particles.js"></script>
+    
 </body>
 
 </html>

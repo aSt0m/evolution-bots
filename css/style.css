@@ -51,9 +51,9 @@ h5{
 #particles-js {
 	height: 100vh; 
 	width: 100%;
-    /* position: relative; 
-    z-index:-1;  */
-    background:rgb(41, 86, 131);
+    position: absolute; 
+    z-index:-1;  
+    background:rgb(255, 255, 255);
     
 } 
 
@@ -66,22 +66,25 @@ h5{
        top: 0;
        padding-top: 20px;
        padding-bottom: 20px;
-       background:#f7f7f7;
+       background: rgb(255, 255, 255);
+       
    }
    @media (min-width: 768px){
        .nav{
             height: 12vh;
             position: fixed;
             z-index: 100;
-            background: #F6F6F6;
-            justify-content: space-around;
+            background: #ffffff;
             flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0;
        }
        
    }
 .logo{
-    width: 12rem;
-    height: 3rem;
+    width: 14rem;
+    height: 4rem;
     padding-left:25px;
     -o-object-fit: contain;
        object-fit: contain;
@@ -91,8 +94,8 @@ h5{
 @media (min-width: 768px){
  .logo{
      padding-left: 0;
-    width: 24rem;
-    height: 4rem;  
+    width: 28rem;
+    height: 6rem;  
     -o-object-fit: contain;  
        object-fit: contain;
 }
@@ -143,6 +146,7 @@ h5{
 .enlaces-menu li:hover a{
     color: #149d95;
 } 
+
 .ham{
 background-color:transparent;
 cursor: pointer;
@@ -172,11 +176,11 @@ transition: 0.2s  0.1s;
 
 .header-main{
     height: auto;
-    background: #000;
+    /* background: #000;
     background: url(../img/Fondo_Moleculas.jpg);
     background-position: center center;
     background-size: cover;
-    background-blend-mode:screen;
+    background-blend-mode:screen; */
     
    }
    @media (min-width: 768px){
@@ -505,7 +509,7 @@ height: auto;
 @media (min-width: 768px){
     .paragraph-section-med{
         text-align: left;
-        height: 26rem;
+        height: 20rem;
         width: 50vh;
         font-size: 1.4rem;
     }
@@ -655,38 +659,39 @@ height: auto;
 
 .section-cards{
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     padding: 4rem 0; 
 }
 .section-cards-title{
     margin: 5rem 0;
-    font-size: 3rem;
+    font-size: 2rem;
     text-transform: uppercase;
     color: var(--color-primary);
     font-weight: 300;
-
+    
 }
 .contain-cards{
+  
     height: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: space-between;
 }
 .img-card{
-    height: 80%;
+    height: 25rem;
    
 }
-
 .card{
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .btn-instalar{
     text-transform: uppercase;
     font-size: 1.4rem;
     letter-spacing: 1px;
-    display: inline-block;
     padding: .3rem 2rem;
     font-weight: lighter;
     color: #fff;
@@ -699,16 +704,22 @@ height: auto;
     color:rgb(255, 255, 255);
     background: #20ABE2;
 }
+.btn-instalar.btn2:hover{
+    background: #0b4163;
+}
+.btn-instalar.btn3:hover{
+    background: #241F20;
+}
 @media (min-width: 768px){
     .contain-cards{
         flex-direction: row;
-        justify-content: space-between;
+      
       
     }
     
     .img-card{
         padding: 2rem;
-        height: 50%;
+        height: 35rem;
     }
     .btn-instalar{
         margin: 0;
@@ -810,7 +821,10 @@ height: auto;
 
     .title-section-map{
         font-size: 2.5rem;
-    }   
+    }  
+    .img-map{
+        height: 100%;
+    } 
   
 }
 
