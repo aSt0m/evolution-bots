@@ -2,16 +2,33 @@
  const ham = document.querySelector('.ham');
  const enlaces = document.querySelector('.enlaces-menu');
  const barras = document.querySelectorAll('.ham span');
-
-
+ const back = document.querySelector('.back');
+ const link  = document.querySelector('.enlaces-menu ul .link');
 
 
  ham.addEventListener('click', () => {
      enlaces.classList.toggle('activado');
      barras.forEach(child => {
-         child.classList.toggle('animado')});
+          child.classList.toggle('animado')});
      ham.classList.toggle('girar');  
  });
+
+enlaces.addEventListener('click' , ()=> {
+  back.style.display = " inline-block";
+
+})
+
+
+
+  back.addEventListener('click', ()=>{
+     window.scrollTo(0,0);
+     back.style.display = "none";
+     console.log(back);
+  })
+
+
+
+
 /** carrousel */
 var swiper = new Swiper(".mySwiper", {
   effect: "coverflow",

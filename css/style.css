@@ -11,6 +11,7 @@ body{
     font-family: "Monserrat", Sans-serif;
     line-height: 1.5;
     
+    
 }
 html{
     font-size: 62%;
@@ -109,7 +110,7 @@ h5{
     @media (max-width: 768px){
     .enlaces-menu{
         flex-direction:column;
-        justify-content: space-around;
+        justify-content: flex-start;
         align-items:center;
         height: 92vh;         
         margin:0;
@@ -122,6 +123,7 @@ h5{
   }
   .enlaces-menu li{
     padding: 0 20px;
+    margin: 2rem 0;
     list-style-type: none;
     transition: 0.3s;
 }
@@ -373,14 +375,33 @@ height: auto;
         line-height: 1.2
     }
 }
+.back{
+    height: 3rem;
+    width:3rem;
+    border: 1px solid #2A8F99;
+    border-radius: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    position: fixed; 
+    right: 2rem;
+    top: 20px;
+    /* background: #303030; */
+    padding: .5rem;
+    display: none;
+
+}
+.back:hover{
+    cursor: pointer;
+}
 
 
 /* Section => Main */
 .main{
-    padding-top: 10rem;
+    padding-top: 0rem;
 }
 @media (min-width: 768px){
     .main{
+        padding-top: 10rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -630,6 +651,8 @@ height: auto;
         height: 100%;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: left;  
        
     }
@@ -657,18 +680,26 @@ height: auto;
 /* Section => Cards */
 
 
+
 .section-cards{
     height: 100%;
-    padding: 4rem 0; 
+    
+    /* padding: 4rem 0;  */
+}
+@media (min-width: 768px){
+    .section-cards{
+        margin-top: 8rem;
+    }
 }
 .section-cards-title{
-    margin: 5rem 0;
     font-size: 2rem;
     text-transform: uppercase;
     color: var(--color-primary);
     font-weight: 300;
+    margin: 2rem 0;
     
 }
+
 .contain-cards{
   
     height: 100%;
@@ -681,12 +712,14 @@ height: auto;
     height: 25rem;
    
 }
+
 .card{
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 2rem 0;
 }
 .btn-instalar{
     text-transform: uppercase;
@@ -713,6 +746,8 @@ height: auto;
 @media (min-width: 768px){
     .contain-cards{
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
       
       
     }
@@ -731,8 +766,14 @@ height: auto;
 
 /* Section => Referrals */
 .section-table{
-    padding-top: 4rem;
+    padding-top: 0rem;
     text-align: center;
+}
+@media (min-width: 768px){
+    .section-table{
+        padding-top: 4rem;
+
+    }
 }
 .section-table-contain{
     height: 100%;
@@ -885,7 +926,7 @@ height: auto;
         font-size: 1.4rem;
     }
     .section-advantage__img{
-        width: 80%;
+        width: 74%;
     }
 }
 /* FAQS */
@@ -896,7 +937,7 @@ height: auto;
 }
 .faqs-title{
     text-align: center;
-    padding: 3rem;   
+    padding-bottom: 3rem;   
 }
 .faq{
     margin: 0;

@@ -30,11 +30,11 @@
         <nav class="nav">
             <a href="#"><img class="logo" src="img/FidelityBots_Logo.png" alt="logo"></a>
             <ul class="enlaces-menu">
-                <li><a href="#main">oportunidad</a></li>
-                <li><a href="#offer">qué ofrecemos</a></li>
-                <li><a href="#our-bots">nuestros bots</a></li>
-                <li><a href="#referrals">plan de referidos</a></li>
-                <li><a href="#faqs">FAQ's</a></li>
+                <li><a class="link" href="#main">oportunidad</a></li>
+                <li><a class="link" href="#offer">qué ofrecemos</a></li>
+                <li><a class="link" href="#our-bots">nuestros bots</a></li>
+                <li><a class="link" href="#referrals">plan de referidos</a></li>
+                <li><a class="link" href="#faqs">FAQ's</a></li>
             </ul>
 
             <button class="ham" type="button">
@@ -57,7 +57,7 @@
                                 <img class="img-swiper" src="img/GuardBot_Smartphone.png" />
                             </div>
                             <div class="swiper-slide">
-                                <img class="img-swiper" src="img/CorpBot_Smartphone.png" />
+                                <a href=""><img class="img-swiper" src="img/CorpBot_Smartphone.png" /></a>
                             </div>
                         </div>
                     </div>
@@ -69,15 +69,21 @@
                 </div>
             </div>
         </div>
+
     </header>
+    <div class="btn-back">
+        <img class="back" src="img/arriba.png">
+    </div>
+
+    <!-- main -->
     <main class="main" id="main">
         <div class="main-par centrado">
             <div class="main-img">
                 <img class="img-main crypto1" src="img/Crypto_1.jpg" alt="">
             </div>
-            <div class="main-text">
+            <div class="main-text text-crypto1">
                 <h2 class="title-main">Las criptomonedas han llegado para quedarse.</h2>
-                <p class="paragraph-main">Actualmente existen más de 6.000 activos de valor digitales o criptomonedas
+                <p class="paragraph-main ">Actualmente existen más de 6.000 activos de valor digitales o criptomonedas
                     que pueden enviarse a través de internet de forma segura y fiable sin depender de bancos ni
                     entidades financieras y sin el riesgo de inflación del dinero tradicional.
                     Las criptomonedas cuentan ya con más de 100 millones de usuarios y un volumen de mercado en torno a
@@ -87,10 +93,10 @@
             </div>
         </div>
         <div class="main-par centrado">
-            <div class="main-img">
+            <div class="main-img ">
                 <img class="img-main crypto2" src="img/Crypto_2.jpg" alt="">
             </div>
-            <div class="main-text">
+            <div class="main-text text-crypto2">
                 <h2 class="title-main">Una verdadera oportunidad económica.</h2>
                 <p class="paragraph-main">Desde la creación del bitcoin las criptomonedas han estado ofreciendo grandes
                     oportunidades de beneficio a aquellos que se han anticipado. Actividades como la minería de
@@ -106,7 +112,7 @@
             <div class="main-img">
                 <img class="img-main crypto3" src="img/Crypto_3.jpg" alt="">
             </div>
-            <div class="main-text">
+            <div class="main-text text-crypto3">
                 <h2 class="title-main">Aprenda de los errores.</h2>
                 <p class="paragraph-main">Hablamos de un nuevo mercado en el que aun hay mucho que regular. Este es un
                     entorno en el que algunas empresas pueden aprovecharse para ofrecer altos rendimientos a clientes
@@ -118,63 +124,85 @@
             </div>
 
     </main>
+
+    <!-- Section-med -->
     <section class="section-med" id="offer">
         <div class="contain-section-mid centrado">
             <div class="section-med__left">
-                <div class="icon-container">
-                    <img src="img/Icon_1.png" alt="" class="img-corner">
+                <div class="left-up">
+                    <div class="icon-container">
+                        <img src="img/Icon_1.png" alt="" class="img-corner">
+                    </div>
+                    <div class="section-med__left-up">
+                        <h3 class="title-paragraph">La mejor opción de participación en el mercado, el Trading.</h3>
+                        <p class="paragraph-section-med">
+                            Usted siempre tiene la posibilidad de comprar criptomonedas y quedarse esperando a que dicha
+                            criptomoneda se revalorice pero, mientras usted espera sin resultados inmediatos, otros
+                            aprovechan la alta volatilidad que ofrece el mercado de las criptomonedas para ir obteniendo
+                            resultados más interesantes mediante a actividad de trading.
+                        </p>
+                    </div>
                 </div>
-                <div class="section-med__left-up">
-                    <h3 class="title-paragraph">La mejor opción de participación en el mercado, el Trading.</h3>
-                    <p class="paragraph-section-med">
-                        Usted siempre tiene la posibilidad de comprar criptomonedas y quedarse esperando a que dicha
-                        criptomoneda se revalorice pero, mientras usted espera sin resultados inmediatos, otros
-                        aprovechan la alta volatilidad que ofrece el mercado de las criptomonedas para ir obteniendo
-                        resultados más interesantes mediante a actividad de trading.
-                    </p>
-                </div>
-                <div class="icon-container">
-                    <img src="img/Icon_2.png" alt="" class="img-corner">
-                </div>
-                <div class="section-med__left-down">
-                    <h3 class="title-paragraph">La forma más segura, en su propia cuenta.</h3>
-                    <p  class="paragraph-section-med "> Con Fidelity Bots usted no cede la custodia de sus criptomonedas
-                        a nadie sino que las mantiene en su propia cuenta del Exchange autorizando únicamente a que las
-                        órdenes de mercado se reproduzcan en su cuenta a través de alguno de nuestros bots de trading.
-                    </p >
-                </div>
+                <div class="left-down">
+                    <div class="icon-container">
+                        <img src="img/Icon_2.png" alt="" class="img-corner">
+                    </div>
+                    <div class="section-med__left-down">
+                        <h3 class="title-paragraph">La forma más segura, en su propia cuenta.</h3>
+                        <p class="paragraph-section-med "> Con Fidelity Bots usted no cede la custodia de sus
+                            criptomonedas
+                            a nadie sino que las mantiene en su propia cuenta del Exchange autorizando únicamente a que
+                            las
+                            órdenes de mercado se reproduzcan en su cuenta a través de alguno de nuestros bots de
+                            trading.
+                        </p>
+                    </div>
+                </div><!-- left-down animation -->
             </div>
-            <div class="section-med__center text-center" >
+            <div class="section-med__center text-center">
                 <h2 class="title-section-med">qué ofrecemos</h2>
                 <img class="img-central" src="img/Bots_Laptop.png" alt="" class="section-med__img ">
             </div>
             <div class="section-med__right ">
-                <div class="icon-container">
-                    <img src="img/Icon_3.png" alt="" class="img-corner">
+                <div class="right-up">
+
+                    <div class="icon-container">
+                        <img src="img/Icon_3.png" alt="" class="img-corner">
+                    </div>
+                    <div class="section-med__right-up">
+                        <h3 class="title-paragraph">El trading no es fácil y conlleva alto riesgo, trabajamos solo con
+                            expertos.</h3>
+                        <p class="paragraph-section-med ">
+                            No se deje engañar, el trading conlleva riesgos y solo en manos expertas tendrá la
+                            oportunidad
+                            de mejorar los resultados que obtendría guardando sus monedas. Fidelity Bots testa y
+                            selecciona
+                            los traders más experimentados y con mejores resultados contrastados y ofrece sus servicios
+                            a
+                            nuestros clientes. Estos bots son semiautomáticos, es decir, ofrecen una ayuda automatizada
+                            a
+                            los traders pero exigen su seguimiento por parte de un trader profesional.
+                        </p>
+                    </div>
                 </div>
-                <div class="section-med__right-up">
-                    <h3 class="title-paragraph">El trading no es fácil y conlleva alto riesgo, trabajamos solo con
-                        expertos.</h3>
-                    <p class="paragraph-section-med ">
-                        No se deje engañar, el trading conlleva riesgos y solo en manos expertas tendrá la oportunidad
-                        de mejorar los resultados que obtendría guardando sus monedas. Fidelity Bots testa y selecciona
-                        los traders más experimentados y con mejores resultados contrastados y ofrece sus servicios a
-                        nuestros clientes. Estos bots son semiautomáticos, es decir, ofrecen una ayuda automatizada a
-                        los traders pero exigen su seguimiento por parte de un trader profesional.
-                    </p>
-                </div>
-                <div class="icon-container">
-                    <img src="img/Icon_4.png" alt="" class="img-corner">
-                </div>
-                <div class="section-med__right-down">
-                    <h3 class="title-paragraph">Uno de los pilares de la estrategia que proponemos, diversifique.</h3>
-                    <p class="paragraph-section-med ">
-                        Ya hemos comentado que el mercado de las criptomoneda es muy volátil y esto genera grandes
-                        oportunidades pero también conlleva el riesgo de tener algunas operaciones en negativo. Aunque
-                        la mayoría de las operaciones de nuestros traders cierren en positivo, sus estrategias son
-                        diferentes, por lo que protegerá mejor su cartera si diversifica y utiliza diferentes bots que
-                        pueden tener también resultados diferentes.
-                    </p>
+                <div class="right-down">
+
+                    <div class="icon-container">
+                        <img src="img/Icon_4.png" alt="" class="img-corner">
+                    </div>
+                    <div class="section-med__right-down">
+                        <h3 class="title-paragraph">Uno de los pilares de la estrategia que proponemos, diversifique.
+                        </h3>
+                        <p class="paragraph-section-med ">
+                            Ya hemos comentado que el mercado de las criptomoneda es muy volátil y esto genera grandes
+                            oportunidades pero también conlleva el riesgo de tener algunas operaciones en negativo.
+                            Aunque
+                            la mayoría de las operaciones de nuestros traders cierren en positivo, sus estrategias son
+                            diferentes, por lo que protegerá mejor su cartera si diversifica y utiliza diferentes bots
+                            que
+                            pueden tener también resultados diferentes.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -196,8 +224,8 @@
         </div>
     </section>
 
-    <section class="section-cards centrado " id="our-bots">
-        <h3 class="section-cards-title text-center ">nuestros bots</h3>
+    <section class="section-cards" id="our-bots">
+        <h3 class="section-cards-title text-center">nuestros bots</h3>
         <div class="contain-cards centrado">
             <div class="card ">
                 <img src="img/GuardBot_Box.png" alt="" class="img-card">
@@ -425,16 +453,20 @@
 
 
 
-    
+    <!-- Initialize Gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
     <!-- Initialize Swiper -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    
+
     <!-- <script src="js/carrousell.js"></script> -->
     <script src="js/events.js"></script>
     <!-- Particle JS -->
     <script src="js/particles.js"></script>
-    
+    <!-- animation.js -->
+    <script src="js/animations.js"></script>
+
 </body>
 
 </html>
