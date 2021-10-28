@@ -511,14 +511,14 @@ height: auto;
 .title-paragraph{
     
     font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 500;
     
 }
 @media (min-width: 768px){
     .title-paragraph{
         text-align: left;
         margin: 0;
-        font-weight: 300;
+        font-weight: 700;
     }
 }
 .paragraph-section-med{
