@@ -84,7 +84,7 @@ h5{
        
    }
 .logo{
-    width: 14rem;
+    width: 24rem;
     height: 4rem;
     padding-left:25px;
     -o-object-fit: contain;
@@ -359,7 +359,7 @@ height: auto;
     line-height: 1.5;
     font-size: 1.2rem;
     font-weight: 500;
-    text-transform: capitalize;
+    
 }
 @media (min-width: 768px){
     .text{
@@ -386,7 +386,7 @@ height: auto;
     right: 2rem;
     top: 20px;
     /* background: #303030; */
-    padding: .5rem;
+    padding: .2rem;
     display: none;
 
 }
@@ -509,8 +509,9 @@ height: auto;
 }
 
 .title-paragraph{
+    
     font-size: 1.6rem;
-    font-weight: 400;
+    font-weight: 700;
     
 }
 @media (min-width: 768px){
@@ -710,8 +711,9 @@ height: auto;
 }
 .img-card{
     height: 25rem;
-   
+    
 }
+
 
 .card{
     height: 100%;
@@ -1083,6 +1085,7 @@ height: auto;
         
     }
    .img-brands{
+        object-fit: cover;
         height: 80%;
         width: 80%;
    }
@@ -1114,7 +1117,7 @@ height: auto;
     
 }
 .paragraph-footer{
-    color: #525252;
+    color: #858080;
 }
 @media (min-width: 768px){
     .container-footer{
@@ -1151,7 +1154,7 @@ height: auto;
 .link-footer{
     text-transform: capitalize;
     font-size: 1.2rem;
-    color: #525252;
+    color: #9b9797;
     text-decoration: none;
     margin-bottom: 1rem;
     
@@ -1163,11 +1166,11 @@ height: auto;
     width: 100%;
     text-transform: uppercase;
     text-decoration: none;
-    color: #525252;
+    color: #9b9797;
     padding: 1rem;
 }
 .link-footer-legal:hover{
-    color: #9e8181;
+    color: #fff;
 }
 .copyright{
     color: #6D6D6D;
