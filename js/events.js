@@ -19,7 +19,7 @@ enlaces.addEventListener('click' , ()=> {
 })
 
 
-
+/* Evento que me regresa a la parte de arriba */
   back.addEventListener('click', ()=>{
      window.scrollTo(0,0);
      back.style.display = "none";
@@ -44,9 +44,6 @@ var swiper = new Swiper(".mySwiper", {
   },
   autoplay: {
     delay: 5000,
-  },
-  mousewheel: {
-    invert: true,
   },
  loop: true,
 });
