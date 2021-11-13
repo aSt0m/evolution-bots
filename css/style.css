@@ -1186,7 +1186,7 @@ height: auto;
     height: 5rem;
 }
 .img-container-business:hover .tooltip {
-    display: inline-block;
+    display: none;
   }
 .footer{
     height: 100%;
