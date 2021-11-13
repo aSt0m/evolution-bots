@@ -1286,7 +1286,11 @@ height: auto;
 .section-roadmap{
     padding-top: 4rem;
     height: 100%;
-    background: #EAF4F5;
+    background:  url(../img/fondoParticles.png);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: screen;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1388,10 +1392,13 @@ height: auto;
     justify-content: flex-start;
     align-items: center;
     border-radius: 8px;
-    background: #fff;
+    /* background: #fff; */
     margin: 1rem 0;
     padding: .5rem;
     position: relative;  
+}
+.arrow{
+    display:none;
 }
 @media (min-width: 768px){
     .card-customer{
@@ -1402,10 +1409,21 @@ height: auto;
         position: inherit;
         margin: 3rem 0;
         padding: 1rem;
-
+        
+        
+    }
+    .arrow{
+        height: 30rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
     }
-
+    .img-arrow{
+        height: 2rem;
+        
+    }
+ 
 }
 
 .img-customer{
