@@ -573,7 +573,6 @@ height: auto;
         margin: 0;
     }
     .section-med__left{
-        
         width: 28%;
         display: flex;
         flex-direction: column;
@@ -615,13 +614,11 @@ height: auto;
 }
 
 .section-div__contain{
-    
     text-align: center;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-   
 }
 
 .title-section-div{
@@ -689,7 +686,7 @@ height: auto;
 }
 @media (min-width: 768px){
     .section-cards{
-        margin-top: 8rem;
+        padding-top: 3rem;
     }
 }
 .section-cards-title{
@@ -697,8 +694,13 @@ height: auto;
     text-transform: capitalize;
     color: var(--color-primary);
     font-weight: 300;
-    margin: 2rem 0;
     
+    
+}
+@media (min-width: 768px){
+    .section-cards-title{
+        padding: 3rem 0;
+    }
 }
 
 .contain-cards{
@@ -778,12 +780,9 @@ height: auto;
     }
 }
 .section-table-contain{
-    height: 100%;
-
-    
+    height: 100%;   
 }
 .section-table__text{
-   
     text-align: center;
 }
 .text-section-table{
@@ -792,10 +791,11 @@ height: auto;
 
 }
 .title-section-table{
-    font-size: 2rem;
-    text-transform: capitalize;
+     font-size: 2rem;
+    font-family: 'Monserrat', sans-serif;
     color: var(--color-primary);
-    font-weight: 300; 
+    font-weight: lighter;
+    padding: 2rem 0; 
 }
 .img-section-table{
     -o-object-fit: contain;
@@ -1120,13 +1120,13 @@ height: auto;
 }
 @media (min-width: 768px){
     .container-images-business{
-        width: 100%;
-    
+        width: 100%;   
         flex-direction: row;
         justify-content: center;
         align-items: center;
-
-
+    }
+    .title-business-plan{
+        padding: 2rem;
     }
 
 }
@@ -1167,7 +1167,7 @@ height: auto;
 .title-link-business:first-letter{
     text-transform: capitalize;
 }
-.tooltip{
+/* .tooltip{
     display: none;
     width: 120px;
     background-color: #20ABE2;
@@ -1186,8 +1186,8 @@ height: auto;
     height: 5rem;
 }
 .img-container-business:hover .tooltip {
-    display: none;
-  }
+    display: inline-block;
+  } */
 .footer{
     height: 100%;
     background: #303030;
@@ -1280,11 +1280,11 @@ height: auto;
 .section-roadmap{
     padding-top: 4rem;
     height: 100%;
-    background:  url(../img/fondoParticles2.png);
+    /* background:  url(../img/fondoParticles2.png);
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-    background-blend-mode: screen;
+    background-blend-mode: screen; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1461,5 +1461,20 @@ height: auto;
     font-weight: 400;
     letter-spacing: 1px;
    
+
+}
+
+/* Paginas internas */
+
+.container-pag-int{
+    background: #ffffff;
+    
+}
+@media (min-width: 768px){
+    .container-pag-int{
+    height: 90%;
+    margin-top: 10vh;
+    padding: 3rem;
+    }
 
 }
