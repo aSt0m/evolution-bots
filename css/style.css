@@ -791,11 +791,11 @@ height: auto;
 
 }
 .title-section-table{
-     font-size: 2rem;
-    font-family: 'Monserrat', sans-serif;
+    
+    font-size: 2rem;
+    font-weight: 300;
     color: var(--color-primary);
-    font-weight: lighter;
-    padding: 2rem 0; 
+    margin: 0;
 }
 .img-section-table{
     -o-object-fit: contain;
