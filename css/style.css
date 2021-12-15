@@ -1416,7 +1416,7 @@ height: auto;
     /* background: #fff; */
     margin: 1rem 0;
     padding: .5rem;
-    position: relative;  
+    /* position: relative;   */
 }
 .arrow{
     display:none;
@@ -1461,7 +1461,7 @@ height: auto;
 }
 .img-customer:hover{
     background:var(--color-primary);
-    cursor: pointer;
+    
 }
  @media (min-width: 336px){
      .img-customer{
