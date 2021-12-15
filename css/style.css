@@ -80,6 +80,8 @@ h5{
        padding-top: 20px;
        padding-bottom: 20px;
        background: rgb(255, 255, 255);
+   
+
        
    }
    @media (min-width: 768px){
@@ -165,23 +167,30 @@ h5{
 .enlaces-menu li:hover a{
     color: #149d95;
 } 
+
+.link.button{
+    color: #fff;
+    background: var(--color-primary);
+    border-radius: 3rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.link.button:hover{
+    color: rgb(66, 65, 65);
+}
 @media (min-width: 768px){
-    .link.button{
-        color: #fff;
-        background: var(--color-primary);
-        border-radius: 3rem;
-        padding: 0.5rem 1rem;;
-    }
-    .link.button:hover{
-        color: rgb(66, 65, 65);
-    }
+   
     .lenguage-link{
+        position: absolute;
+        right: 3rem;
+        bottom: 40%;
         color: #2A8F99;
         font-weight: 600;
         text-decoration: none;
         font-size: 1.4rem;
     }
-}
+    }
 .ham{
 background-color:transparent;
 cursor: pointer;
@@ -283,14 +292,7 @@ transition: 0.2s  0.1s;
        height: 100%;
    }
 }
-.lenguage{
-    height: 2rem;
-   
-    position: absolute;
-    right: 4rem;
-    bottom: 40%;
 
-}
 
 .container{
     display: flex;
@@ -746,7 +748,7 @@ height: auto;
 
 .contain-cards{
   
-    height:60vh;
+    height:100%;
     display: flex;
     flex-direction: column;
     text-align: center;

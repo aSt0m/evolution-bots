@@ -4,7 +4,7 @@
  const barras = document.querySelectorAll('.ham span');
  const back = document.querySelector('.back');
  const link  = document.querySelector('.enlaces-menu ul .link');
-
+ 
 
  ham.addEventListener('click', () => {
      enlaces.classList.toggle('activado');
@@ -13,18 +13,20 @@
      ham.classList.toggle('girar');  
  });
 
-enlaces.addEventListener('click' , ()=> {
-  back.style.display = " inline-block";
-
-})
+// enlaces.addEventListener('click' , ()=> {
+//   back.style.display = " inline-block";
+ 
+// })
 
 
 /* Evento que me regresa a la parte de arriba */
-  back.addEventListener('click', ()=>{
-     window.scrollTo(0,0);
-     back.style.display = "none";
-     console.log(back);
-  })
+
+
+  // back.addEventListener('click', ()=>{
+  //    window.scrollTo(0,0);
+  //    back.style.display = "none";
+  //    console.log(back);
+  // })
 
 
 
