@@ -134,6 +134,7 @@ h5{
         transition: opacity 5s ease-out;
         width:100%;  
         }
+
   }
   .enlaces-menu li{
     padding: 0 20px;
@@ -148,6 +149,7 @@ h5{
       width:100%;
       padding:5px;    
   }
+
 } 
 
 .enlaces-menu li a{
@@ -159,10 +161,27 @@ h5{
     transition: .5s;
     
 }
+
 .enlaces-menu li:hover a{
     color: #149d95;
 } 
-
+@media (min-width: 768px){
+    .link.button{
+        color: #fff;
+        background: var(--color-primary);
+        border-radius: 3rem;
+        padding: 0.5rem 1rem;;
+    }
+    .link.button:hover{
+        color: rgb(66, 65, 65);
+    }
+    .lenguage-link{
+        color: #2A8F99;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 1.4rem;
+    }
+}
 .ham{
 background-color:transparent;
 cursor: pointer;
@@ -266,19 +285,13 @@ transition: 0.2s  0.1s;
 }
 .lenguage{
     height: 2rem;
-    /* width: 14rem; */
+   
     position: absolute;
-    right: 1rem;
+    right: 4rem;
     bottom: 40%;
 
 }
-.flag{
-    width: 2rem;
-    height: 2rem;
-    margin: 4px;
-    
-  
-}
+
 .container{
     display: flex;
     flex-direction: column;
@@ -870,6 +883,7 @@ height: auto;
 /* Section => Map */
 
 .section-map{
+    display: none;
     margin: 4rem 0;
 }
 .contain-section-map{
