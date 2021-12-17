@@ -3,7 +3,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 /* main */
 gsap.from(".crypto1", {
-    scrollTrigger: ".crypto", //Inicia la animacion cuando ".texto" entra en el viewport (una vez)
+    scrollTrigger: ".crypto1", //Inicia la animacion cuando ".texto" entra en el viewport (una vez)
     x: -100,
     duration: 4,
    opacity: 0,
@@ -12,7 +12,7 @@ gsap.from(".crypto1", {
   });
 
 gsap.from(".text-crypto1", {
-    scrollTrigger: ".text-cryto1", // start the animation when ".box" enters the viewport (once)
+    scrollTrigger: ".text-crypto1", // start the animation when ".box" enters the viewport (once)
     x: 100,
     duration: 4,
    opacity: 0

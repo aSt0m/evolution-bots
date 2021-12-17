@@ -1,4 +1,8 @@
+
+ 
+ 
  /**Hamburguer menu */
+
  const ham = document.querySelector('.ham');
  const enlaces = document.querySelector('.enlaces-menu');
  const barras = document.querySelectorAll('.ham span');
@@ -58,3 +62,57 @@ var swiper = new Swiper(".mySwiper", {
 // })
 
 
+window.onload = function(){
+
+  const checkboxInput = document.querySelector('.checkbox-input');
+  checkboxInput.addEventListener( 'click', ()=>{
+    
+  if( checkboxInput.checked ){
+    console.log( 'Esta marcado el checkbox español')
+    window.location = "../En/index.html"
+  }else{
+    console.log(" No esta marcado el checkbox")
+    window.location = "index.html"
+}
+})
+
+  }
+
+
+
+
+  
+  const checkboxInput2 = document.querySelector('.checkbox-input2');
+  checkboxInput2.addEventListener( 'click', ()=>{
+
+    if( checkboxInput2.checked ){
+      console.log( 'Esta marcado el checkbox de ingles')
+      setTimeout(() => {
+       
+        window.location = "/index.html"
+        
+      }, 3000);
+    }
+     else{
+       console.log(" No esta marcado el checkbox de Ingles")
+     }
+  }) 
+
+
+  
+// const buttonIphone = document.querySelector(".button-iphone");
+// const containerButton = document.querySelector('.container-button')
+// buttonIphone.addEventListener('click', ()=>{
+//     console.log("Capturado el evento Click")
+//     buttonIphone.style.backgroundColor = "#000"
+//     buttonIphone.style.left = "3rem";
+   
+// })
+// const buttonIphone2 = document.querySelector(".btn-check");
+// const containerButton2 = document.querySelector('.switch-btn')
+// buttonIphone2.addEventListener('click', ()=>{
+//     console.log("Capturado el evento Click")
+//     buttonIphone2.style.backgroundColor = "#000"
+//     buttonIphone2.style.left = "3rem";
+   
+// })
