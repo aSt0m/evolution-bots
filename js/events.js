@@ -68,12 +68,15 @@ window.onload = function(){
   checkboxInput.addEventListener( 'click', ()=>{
     
   if( checkboxInput.checked ){
-    console.log( 'Esta marcado el checkbox español')
-    window.location = "/fidelitybots/en/index.html";
-    return checkboxInput = 'true';
+    
+    setTimeout(() => {
+       
+      window.location = "/fidelitybots/en/index.html";
+      
+    }, 1500);
+   
   }else{
     console.log(" No esta marcado el checkbox")
-     "index.html"
 }
 })
 
@@ -92,7 +95,7 @@ window.onload = function(){
        
         window.location = "/fidelitybots/index.html"
         
-      }, 3000);
+      }, 1500);
     }
      else{
        console.log(" No esta marcado el checkbox de Ingles")
