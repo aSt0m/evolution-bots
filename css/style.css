@@ -167,29 +167,139 @@ h5{
 .enlaces-menu li:hover a{
     color: #149d95;
 } 
+.list-link{
+    text-align: center;
+}
 
 .link.button{
     color: #fff;
     background: var(--color-primary);
     border-radius: 3rem;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
     text-decoration: none;
     font-size: 1.2rem;
+    
+}
+@media (min-width: 768px){
+    .link.button{
+        width: 40%;
+    }
 }
 .link.button:hover{
-    color: rgb(66, 65, 65);
+    color: rgb(54, 52, 52);
+    transition: .2s;
+}
+
+ /* Checkbox Boton de Iphone  */
+ .switch-container{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+.lbl{
+    position: relative;
+    display: inline-block;
+    height: 2rem;
+    width: 5rem;
+    background: #979797;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: .2s;
+    text-align: left;
+    text-align: left;
+    
+    
+}
+.lbl::after{
+    content: "";
+    display: block;
+    width: 24%;
+    height: 1.2rem;
+    background: #eee;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: .2s;
+    box-sizing: contain;
+    
+}
+
+#switch:checked + .lbl::after{
+    transition: .6s;
+    left: 32px;
+}
+
+#switch:checked + .lbl{
+    background: var(--color-primary);
+}
+#switch{
+    display: none;
+}
+ .switch-container2{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+.label{
+    position: relative;
+    display: inline-block;
+    height: 2rem;
+    width: 5rem;
+    background: #979797;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: .2s;
+    text-align: left;
+    text-align: left;
+    
+    
+}
+.label::after{
+    content: "";
+    display: block;
+    width: 24%;
+    height: 1.2rem;
+    background: #eee;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: .2s;
+    box-sizing: contain;
+    
+}
+
+#switch2:checked + .label::after{
+    transition: .4s;
+    left: 32px;
+}
+
+#switch2:checked + .label{
+    background: var(--color-primary);
+}
+#switch2{
+    display: none;
+}
+
+.lenguage-link{
+    /* text-transform: uppercase; */
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #000;
 }
 @media (min-width: 768px){
    
     .lenguage-link{
-        position: absolute;
+        /* position: absolute; */
         right: 3rem;
         bottom: 40%;
         color: #2A8F99;
         font-weight: 600;
         text-decoration: none;
         font-size: 1.4rem;
-    }
+        }
     }
 .ham{
 background-color:transparent;
@@ -1232,6 +1342,7 @@ height: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .footer-right{
     text-align: center;
