@@ -71,7 +71,7 @@ window.onload = function(){
     
     setTimeout(() => {
        
-      window.location = "../en/index.html";
+      window.location = "/fidelitybots/en/index.html";
       
     }, 1500);
    
@@ -93,7 +93,7 @@ window.onload = function(){
       console.log( 'Esta marcado el checkbox de ingles')
       setTimeout(() => {
        
-        window.location = "/index.html"
+        window.location = "/fidelitybots/index.html"
         
       }, 1500);
     }
