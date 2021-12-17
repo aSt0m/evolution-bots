@@ -1623,3 +1623,36 @@ height: auto;
     }
 
 }
+
+
+
+
+.container-button{
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgb(54, 52, 52)
+}
+.button-iphone{
+    height: 2rem;
+    width: 5rem;
+    position: relative;
+    box-sizing: content-box;
+    border-radius: 50px;
+    border: none;
+}
+.button-iphone:before{
+    content: '';
+    height: 20px;
+    width: 20px;
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+}
+.button-iphone:hover{
+    cursor: pointer;
+}

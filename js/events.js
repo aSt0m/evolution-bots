@@ -69,10 +69,11 @@ window.onload = function(){
     
   if( checkboxInput.checked ){
     console.log( 'Esta marcado el checkbox español')
-    window.location = "../En/index.html"
+    window.location = "/fidelitybots/en/index.html";
+    return checkboxInput = 'true';
   }else{
     console.log(" No esta marcado el checkbox")
-    window.location = "index.html"
+     "index.html"
 }
 })
 
@@ -100,19 +101,3 @@ window.onload = function(){
 
 
   
-// const buttonIphone = document.querySelector(".button-iphone");
-// const containerButton = document.querySelector('.container-button')
-// buttonIphone.addEventListener('click', ()=>{
-//     console.log("Capturado el evento Click")
-//     buttonIphone.style.backgroundColor = "#000"
-//     buttonIphone.style.left = "3rem";
-   
-// })
-// const buttonIphone2 = document.querySelector(".btn-check");
-// const containerButton2 = document.querySelector('.switch-btn')
-// buttonIphone2.addEventListener('click', ()=>{
-//     console.log("Capturado el evento Click")
-//     buttonIphone2.style.backgroundColor = "#000"
-//     buttonIphone2.style.left = "3rem";
-   
-// })
