@@ -193,8 +193,14 @@ h5{
  /* Checkbox Boton de Iphone  */
  .switch-container{
      display: flex;
+     flex-direction: column-reverse;
      justify-content: center;
      align-items: center;
+ }
+ @media (min-width: 768px){
+     .switch-container{
+         flex-direction: row;
+     }
  }
 .lbl{
     position: relative;
@@ -292,6 +298,7 @@ h5{
    
     .lenguage-link{
         /* position: absolute; */
+        
         right: 3rem;
         margin: 0 1rem;
         font-size: 1.2rem;
@@ -1569,6 +1576,7 @@ height: auto;
     border: 2px solid rgba(19, 168, 159, 0.5);
     border-radius: 50%;
     background: #fff;
+    clip-path: circle(50% at 50% 50%);
     
 }
 .img-customer:hover{
