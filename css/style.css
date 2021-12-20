@@ -244,9 +244,15 @@ h5{
 }
  .switch-container2{
      display: flex;
+     flex-direction: column;
      justify-content: center;
      align-items: center;
  }
+ @media (min-width: 768px){
+    .switch-container2{
+        flex-direction: row;
+    }
+}
 .label{
     position: relative;
     display: inline-block;
