@@ -1,6 +1,6 @@
 
 :root{
-    --color-primary: #149d95;
+    --color-primary: rgb(20, 157, 149);
     --color-secondary: #fff;
     scrollbar-highlight-color: royalblue;
     scrollbar-color: #000;
