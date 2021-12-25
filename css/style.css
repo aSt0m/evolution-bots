@@ -199,7 +199,7 @@ h5{
  }
  @media (min-width: 768px){
      .switch-container{
-         flex-direction: row;
+         flex-direction: row-reverse;
      }
  }
 .lbl{
@@ -250,7 +250,7 @@ h5{
  }
  @media (min-width: 768px){
     .switch-container2{
-        flex-direction: row;
+        flex-direction: row-reverse;
     }
 }
 .label{
