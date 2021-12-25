@@ -73,10 +73,10 @@ window.onload = function(){
        
       window.location = "/fidelitybots/en/index.html";
       
-    }, 1500);
+    }, 1000);
    
   }else{
-    console.log(" No esta marcado el checkbox")
+    window.location = "/fidelitybots/index.html"
 }
 })
 
@@ -95,10 +95,10 @@ window.onload = function(){
        
         window.location = "/fidelitybots/index.html"
         
-      }, 1500);
+      }, 1000);
     }
      else{
-       console.log(" No esta marcado el checkbox de Ingles")
+      window.location = "/fidelitybots/en/index.html"
      }
   }) 
 
